@@ -84,6 +84,7 @@ extern const char kLaunchWidth[];
 extern const char kLayouts[];
 extern const char kManifestVersion[];
 extern const char kMatchAboutBlank[];
+extern const char kInMainWorld[];
 extern const char kMatches[];
 extern const char kMIMETypes[];
 extern const char kMimeTypesHandler[];
@@ -181,6 +182,9 @@ extern const char kWebviewName[];
 extern const char kWebviewAccessibleResources[];
 extern const char kWebviewPartitions[];
 extern const char kWhitelist[];
+extern const char kNWJSInternalFlag[];
+extern const char kNWJSInternalMainFilename[];
+extern const char kNWJSMain[];
 
 }  // namespace manifest_keys
 
@@ -357,6 +361,7 @@ extern const char kInvalidManifestVersion[];
 extern const char kInvalidManifestVersionOld[];
 extern const char kInvalidMatch[];
 extern const char kInvalidMatchAboutBlank[];
+extern const char kInvalidInMainWorld[];
 extern const char kInvalidMatchCount[];
 extern const char kInvalidMatches[];
 extern const char kInvalidMIMETypes[];
