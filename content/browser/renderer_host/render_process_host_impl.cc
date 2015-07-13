@@ -329,11 +329,12 @@ class RendererSandboxedProcessLauncherDelegate
 
 #elif defined(OS_POSIX)
   bool ShouldUseZygote() override {
-    const base::CommandLine& browser_command_line =
-        *base::CommandLine::ForCurrentProcess();
-    base::CommandLine::StringType renderer_prefix =
-        browser_command_line.GetSwitchValueNative(switches::kRendererCmdPrefix);
-    return renderer_prefix.empty();
+      return false;
+//    const base::CommandLine& browser_command_line =
+//        *base::CommandLine::ForCurrentProcess();
+//    base::CommandLine::StringType renderer_prefix =
+//        browser_command_line.GetSwitchValueNative(switches::kRendererCmdPrefix);
+//    return renderer_prefix.empty();
   }
   base::ScopedFD TakeIpcFd() override { return ipc_fd_.Pass(); }
 #endif  // OS_WIN
